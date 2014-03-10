@@ -1,0 +1,107 @@
+body{
+	margin-bottom: 30px;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	outline: 0;
+}
+.container img{
+	display:block;
+	margin-bottom:25px;
+}
+nav {
+	position:static;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+	text-transform: lowercase;
+}
+nav ul{
+	list-style: none;
+	margin-bottom: 0;
+}
+nav .social a{
+	margin:0;
+	display: inline-block;
+	margin-left: 10px;
+}
+header{
+	margin-bottom: 20px;
+}
+section {
+	font: 18px normal Georgia, Cambria, "Times New Roman", Times, serif;
+	line-height: 26px;
+}
+h1,h2,h3,h4,h5{
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+.logo{
+	font-size: 0.00001px;
+	color: transparent;
+	background-image: url('../images/logo.png');
+	background-repeat: no-repeat;
+	margin: 50px auto 30px;
+	width: 379px;
+	height: 68px;
+}
+
+@media only screen and (min-width: 1100px) {
+	nav{
+		position: absolute;
+		top: 168px;
+		text-align: right;
+		width: 90px;
+		margin-left:-100px;
+	}
+	nav li{
+		display: block;
+		line-height: 12px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	nav .social{
+		width: 90px;
+		text-align: right;
+	}
+	nav .social a{
+		margin:0;
+		display: inline-block;
+		margin-left: 5px;
+	}
+	nav.sticky{
+		position:fixed;
+		top: 15px;
+	}
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 1100px) and (min-width: 800px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	.logo{
+		height: 50px;
+		width: 280px;
+		background-size: 280px 50px;
+	}
+}
